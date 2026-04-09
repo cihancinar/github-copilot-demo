@@ -1,0 +1,1 @@
+Get-Random -Minimum 1 -Maximum (<sides> + 1)
