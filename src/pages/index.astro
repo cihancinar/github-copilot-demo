@@ -1,0 +1,29 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>🎤 My Microsoft Talks</h1>
+			<p>
+				Welcome! I'm a speaker at various Microsoft events, sharing insights on modern development,
+				AI, cloud technologies, and more. This blog is where I share details about my upcoming and
+				past sessions.
+			</p>
+			<p>
+				Browse my <a href="/blog">talks</a> to see session details, slides, and key takeaways
+				from each presentation.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
